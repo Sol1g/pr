@@ -11,7 +11,7 @@
         <h2>{{ $input->name }}</h2>
             <p>Цена: {{($input['cost'])}} ₽</p>
             <p>{{ $input['amount'] > 0 ? 'В наличии' : 'Нет в наличии' }}</p>
-            <a href="{{ url('/products/' . $input->id) }}">Купыть</a>
+            <a href="{{ url('/products/' . $input->id) }}">Купить</a>
         </div>
     @endforeach
     
@@ -27,7 +27,7 @@
     .card {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         border: 1px solid #ccc; padding: 10px; margin: 10px; width: 200px;
-        background-color:blue;
+        background-color:purple;
         color:white;
         width: 150px;
         height:250px;
@@ -38,6 +38,7 @@
         background-color: grey;
         width: 150px;
         height:250px;
+        color:white;
     }
     a{
         color:white;
